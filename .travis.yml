@@ -7,7 +7,7 @@ script:
   - npm run docs:build
 after_success:
   - cd docs/.vuepress/dist
-  - echo "spring-boot.cn\nwww.spring-boot.cn" > CNAME
+  - echo "spring-boot.cn,www.spring-boot.cn" > CNAME
   - git init
   - git config user.name "${U_NAME}"
   - git config user.email "${U_EMAIL}"

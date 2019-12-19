@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /hero.png
-actionText: Get Started →
-actionLink: '/'
+actionText: Contact Us
+actionLink: '/contactUs'
 footer: Copyright © 2019 spring-boot.cn
 ---

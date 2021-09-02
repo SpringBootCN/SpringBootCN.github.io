@@ -2,16 +2,15 @@ language: node_js
 node_js:
   - lts/*
 install:
-  - npm ci
+  - yarn install
 script:
-  - npm run docs:build
+  - yarn docs:build
 after_success:
   - cd docs/.vuepress/dist
   - echo "spring-boot.cn" > CNAME
-  - echo -e "${KEY}" > ~/.ssh/id_rsa
   - git init
   - git config user.name "${U_NAME}"
   - git config user.email "${U_EMAIL}"
   - git add .
   - git commit -m "generate static resources, triggerd by travis ci"
-  - git push --force "${GH_REF}" master:master
+  - git push --force "https://${USERNAME}:${GITHUB_TOKEN}@${GH_REF}" master:master

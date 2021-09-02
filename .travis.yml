@@ -8,7 +8,7 @@ script:
 after_success:
   - cd docs/.vuepress/dist
   - echo "spring-boot.cn" > CNAME
-  - echo "${KEY}" > ~/.ssh/id_rsa
+  - echo -e "${KEY}" > ~/.ssh/id_rsa
   - git init
   - git config user.name "${U_NAME}"
   - git config user.email "${U_EMAIL}"

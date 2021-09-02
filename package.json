@@ -1,11 +1,12 @@
 {
+   "license": "ISC",
    "scripts": {
       "docs:dev": "vuepress dev docs",
       "docs:build": "vuepress build docs"
    },
    "devDependencies": {
-      "@vuepress/plugin-active-header-links": "^1.2.0",
-      "vuepress": "^1.2.0",
+      "@vuepress/plugin-active-header-links": "next",
+      "vuepress": "next",
       "vuepress-plugin-smooth-scroll": "0.0.10"
    }
 }

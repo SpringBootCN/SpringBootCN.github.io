@@ -2,7 +2,7 @@ module.exports = {
   lang: 'zh-CN',
   title: 'SpringBootCN',
   description: 'Spring资料收集，网站构建中，敬请期待',
-  plugins: ['vuepress-plugin-smooth-scroll', '@vuepress/active-header-links'],
+  contributors: false,
   themeConfig: {
     nav: require('./nav/zh')
   },

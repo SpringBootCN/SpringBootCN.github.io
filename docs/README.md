@@ -1,8 +1,6 @@
 ---
 home: true
 heroImage: /hero.png
-actions:
-  - text: Contact Us
-    link: '/contactUs'
-footer: Copyright © 2019 spring-boot.cn
+footer: 'Copyright © 2019~2021 spring-boot.cn<br>admin@spring-boot.cn'
+footerHtml: true
 ---
